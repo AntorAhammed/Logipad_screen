@@ -1,0 +1,331 @@
+.applyForLaunch {
+  position: relative;
+  width: 100%;
+  background: #db3121;
+  padding: 50px 20px;
+  color: white;
+  font-family: "Space Grotesk";
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1120px) {
+  .applyForLaunch h1,
+  .applyForLaunch p {
+    transform: scale(0.85);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .applyForLaunch h1,
+  .applyForLaunch p {
+    transform: scale(0.75);
+  }
+}
+
+.applyForLaunch h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.applyForLaunch p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: lighter;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.applyForLaunch button {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.dashboard-body {
+  width: 74%;
+  margin: 0 17%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 50px;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 1120px) {
+  .dashboard-body {
+    margin: 0 14%;
+    padding-top: 0px;
+    transform: scale(0.9);
+    width: 82%;
+  }
+}
+
+.dashboard-body-filter {
+  display: flex;
+  gap: 30px;
+}
+
+.dashboard-body-filter-radio {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dashboard-body-filter-radio label {
+  font-family: "Syne", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.dashboard-body-header {
+  background-color: #222222;
+  padding: 0 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-body-header-search {
+  margin: 10px 0;
+  background-color: #110d0c;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 50%;
+  border-radius: 50px;
+}
+
+.dashboard-body-header-search input {
+  border: none;
+  background-color: transparent;
+  flex: 1;
+  outline: none;
+  color: white;
+}
+
+.dashboard-body-header-selects {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-body-header-selects select {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 0 20px;
+  outline: none;
+  font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.dashboard-body-header-selects-divider {
+  margin-left: 20px;
+}
+
+.dashboard-body-table {
+  width: 100%;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  min-width: 850px;
+}
+
+.dashboard-body-cards {
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dashboard-body-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-body-table th,
+.dashboard-body-card-header {
+  text-align: left;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.5px;
+  line-height: 45px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(243, 243, 243, 0.5);
+}
+
+.dashboard-body-card-header {
+  border-bottom: none;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.dashboard-body-table td {
+  border-bottom: 1px solid rgba(243, 243, 243, 0.5);
+  font-size: 13.5px;
+}
+
+.dashboard-body-table-project-name {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.dashboard-body-table-project-name div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-body-table-project-name p {
+  text-transform: uppercase;
+}
+
+.dashboard-body-table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dashboard-body-table-pagination-button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.dashboard-body-table-pagination-button-active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #db3121;
+}
+
+.dashboard-body-table-progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+}
+
+.dashboard-body-table-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.dashboard-body-table-progress-single {
+  width: 8px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(30deg);
+}
+
+.dashboard-body-table-progress-single-active {
+  background: #db3121;
+}
+
+.dashboard-body-phone-heading-title h1 {
+  display: none;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f3f3f3;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 800px) {
+  .dashboard-body {
+    margin: 0;
+    transform: scale(1);
+    padding: 20px !important;
+    width: 100%;
+  }
+
+  .dashboard-body-table-pagination {
+    display: none;
+  }
+
+  .dashboard-body-header-selects {
+    display: none;
+  }
+
+  .dashboard-body-header-search {
+    width: 100%;
+  }
+
+  .dashboard-body-table {
+    display: none;
+  }
+
+  .dashboard-body-table-project-name {
+    padding: 0;
+  }
+
+  .dashboard-body-cards {
+    display: flex;
+  }
+
+  .dashboard-body-phone-heading-title h1 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .dashboard-body-filter-radio label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dashboard-body-filter-radio label {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .dashboard-body-filter-radio label {
+    font-size: 10px;
+  }
+}
+ 
+ul>li{
+  color: #f3f3f3;
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 20px;
+}
+.dashboard-body-table-td{
+  box-shadow: 4px 4px 4px 4px gray;
+}
